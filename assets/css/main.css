@@ -9,7 +9,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, a, em,
     
     button{
         background: inherit;
-        color: #000000;
+        color: #313f47;
         text-decoration: none;
         border: 2.5px solid;
         border-radius: 25px;
@@ -22,7 +22,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, a, em,
 
     .button{
         background: inherit;
-        color: #000000;
+        color: #313f47;
         text-decoration: none;
         border: 2.5px solid;
         border-radius: 25px;
