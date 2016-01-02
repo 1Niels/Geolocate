@@ -20,12 +20,34 @@
   
   
     <div class="wrapperpage wrapper_padding clearfix">
-	<h1>Niels Terwiesch</h1>
+    	
+	<h1>Geolocate</h1>
 	<br>
 	<br>
 	<br>
-	 <a href="https://github.com/1Niels" target="_blank" class="a"> <i class="fa fa-github"> </i></a>
-         <a href="https://instagram.com/321niels" target="_blank" class="a"> <i class="fa fa-instagram"> </i></a>
+	<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">My location</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;	
+}
+</script>
+
     </div>
 		<footer id ="main_footer">
 			<p class="copyright">2015 Niels</p>
